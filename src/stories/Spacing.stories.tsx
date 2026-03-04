@@ -2,6 +2,8 @@ import React from 'react';
 // Importare i tipi necessari da Storybook per definire i metadati e le storie
 import type { Meta, StoryObj } from '@storybook/react';
 
+import "../styles/spacing.css";
+
 // Definire i metadati.
 // - `title` è il nome che apparirà nella sidebar di Storybook.
 // - `parameters.layout: 'centered'` centra il componente nel canvas.
@@ -55,7 +57,7 @@ export const Default: Story = {
 
         <>
             <h1>Spacing</h1>
-            <p className='font-size-body'>
+            <p>
                 Our spacing variables use a clamping mechanism to ensure that the spacing is scalable across different screen size.
                 This is done by using the `clamp()` function. The minimum viewport width is 400px and the maximum is 1200px.
             </p>
