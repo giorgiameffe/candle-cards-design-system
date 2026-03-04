@@ -1,4 +1,6 @@
+import "../components/Button.css"
+
 export const Button: React.FC = () => {
 
-  return <div>Button</div>
+  return <div className="button">Button</div>
 }
