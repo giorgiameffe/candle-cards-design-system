@@ -7,12 +7,20 @@ import "../styles/spacing.css";
 // Definire i metadati.
 // - `title` è il nome che apparirà nella sidebar di Storybook.
 // - `parameters.layout: 'centered'` centra il componente nel canvas.
+// - `parameters.docs`: contiene la documentazione testuale che appare nella tab Docs.
 // - `tags: ['autodocs']` abilita la documentazione automatica.
 
 const meta: Meta = {
     title: 'Foundations/Spacing',
     parameters: {
-        layout: 'centered'
+        layout: 'centered',
+        docs: {
+            description: {
+                component:
+                    "Il sistema di spacing utilizza unità fluide basate sulla funzione CSS \`clamp()\`." +
+                    "Questo approccio permette ai margini e ai padding di adattarsi dinamicamente tra una dimensione minima e una massima in base alla larghezza del viewport."
+            },
+        },
     },
     tags: ['autodocs']
 }
@@ -20,7 +28,7 @@ const meta: Meta = {
 export default meta;
 
 // Creare un alias di tipo per definire le storie del componente, usando le informazioni contenute nei metadati.
-// `StoryObj<typeof meta>` è un tipo fornito da Storybook per tipizzare correttamente una storia.
+// `StoryObj<typeof meta > ` è un tipo fornito da Storybook per tipizzare correttamente una storia.
 // Usa `meta` per sapere qual è il componente e quali props accetta.
 
 type Story = StoryObj<typeof meta>;
@@ -71,9 +79,9 @@ export const Default: Story = {
                           Viene anche assegnata una variabile CSS custom '--story-spacing' 
                           usata nello stile del blocco colorato `.info`
                         */}
-                        <dd style={{ ['--story-spacing' as any]: `var(--spacing-${key})` }}>
+                        <dd style={{ ['--story-spacing' as any]: `var(--spacing - ${key})` }}>
                             <span>
-                                <SpaceCalc value={`--spacing-${key}`} />
+                                <SpaceCalc value={`--spacing - ${key} `} />
                             </span>
                             <span className="spacing-info" />
                         </dd>

@@ -3,10 +3,27 @@ import type { Meta, StoryObj } from '@storybook/react';
 
 import "../styles/colors.css";
 
-// Metadati per Storybook
+// Definire i metadati.
+// - `title` è il nome che apparirà nella sidebar di Storybook.
+// - `parameters.layout: 'centered'` centra il componente nel canvas.
+// - `parameters.docs`: contiene la documentazione testuale che appare nella tab Docs.
+// - `tags: ['autodocs']` abilita la documentazione automatica.
+
 const meta: Meta = {
     title: 'Foundations/Colors', // Titolo della sezione nel pannello di Storybook
-    tags: ['autodocs']     // Attiva la generazione automatica della documentazione
+    parameters: {
+        layout: "centered",
+        docs: {
+            description: {
+                component:
+                    "Sistema cromatico basato su spazio colore OKLCH. " +
+                    "La palette include i colori funzionali (Sconto in Ambra, Nuovo in Salvia) " +
+                    "e le linee emozionali delle candele (Relax, Energy, Comfort). " +
+                    "Clicca su un colore per copiare la variabile CSS negli appunti.",
+            },
+        },
+    },
+    tags: ['autodocs']  // Attiva la generazione automatica della documentazione
 }
 
 export default meta;

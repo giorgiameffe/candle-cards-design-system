@@ -4,11 +4,23 @@ import type { Meta, StoryObj } from '@storybook/react';
 // Definire i metadati.
 // - `title` è il nome che apparirà nella sidebar di Storybook.
 // - `parameters.layout: 'centered'` centra il componente nel canvas.
+// - `parameters.docs`: contiene la documentazione testuale che appare nella tab Docs.
 // - `tags: ['autodocs']` abilita la documentazione automatica.
+
 const meta: Meta = {
     title: 'Foundations/Typography',
     parameters: {
-        layout: 'centered'
+        layout: 'centered',
+        docs: {
+            description: {
+                component:
+                    "La tipografia utilizza una scala basata su variabili CSS con clamp(), " +
+                    "garantendo leggibilità e gerarchia visiva su ogni dispositivo senza l'uso di media queries. " +
+                    "Gerarchia: dallo stile hero fino alla dimensione xs. " +
+                    "Responsivita: i font si ridimensionano automaticamente in base alla larghezza del viewport. " +
+                    "Utilizzo: usa i tag semantici (h1-h6) o le classi utility (.font-size-*)."
+            },
+        },
     },
     tags: ['autodocs']
 }
