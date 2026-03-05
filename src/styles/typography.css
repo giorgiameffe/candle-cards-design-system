@@ -5,3 +5,71 @@
 html {
     font-family: "Nunito", Arial, Helvetica, sans-serif;
 }
+
+/* Dimensione del testo base, controllata tramite una variabile CSS */
+body {
+    font-size: var(--font-size-body);
+}
+
+/* Classe di utilità per font-size "hero" (grandi titoli introduttivi) */
+.font-size-hero {
+    font-size: var(--font-size-hero);
+}
+
+/* Regole comuni per i titoli (h1–h6) e classi equivalenti.
+   - Imposta la dimensione usando variabili CSS
+   - Aggiunge un margine sotto
+   - Usa text-wrap: balance per rendere più armoniosa la distribuzione delle righe */
+:where(h1, .font-size-h1) {
+    font-size: var(--font-size-h1);
+    margin-bottom: 0.25em;
+    text-wrap: balance;
+}
+
+:where(h2, .font-size-h2) {
+    font-size: var(--font-size-h2);
+    margin-bottom: 0.25em;
+    text-wrap: balance;
+}
+
+:where(h3, .font-size-h3) {
+    font-size: var(--font-size-h3);
+    margin-bottom: 0.25em;
+    text-wrap: balance;
+}
+
+:where(h4, .font-size-h4) {
+    font-size: var(--font-size-h4);
+    margin-bottom: 0.25em;
+    text-wrap: balance;
+}
+
+:where(h5, .font-size-h5) {
+    font-size: var(--font-size-h5);
+    margin-bottom: 0.25em;
+    text-wrap: balance;
+}
+
+:where(h6, .font-size-h6) {
+    font-size: var(--font-size-h6);
+    margin-bottom: 0.25em;
+    text-wrap: balance;
+}
+
+/* Paragrafi e testi con classe .font-size-body:
+   - dimensione del testo presa dalla variabile
+   - margine inferiore per spazio tra paragrafi */
+:where(p, .font-size-body) {
+    font-size: var(--font-size-body);
+    margin-bottom: 1em;
+}
+
+/* Testi più piccoli (tag <small> o classe .font-size-sm) */
+:where(small, .font-size-sm) {
+    font-size: var(--font-size-sm);
+}
+
+/* Testi extra-small */
+:where(.font-size-xs) {
+    font-size: var(--font-size-xs);
+}
