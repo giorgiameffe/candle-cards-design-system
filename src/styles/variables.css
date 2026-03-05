@@ -20,4 +20,29 @@
     --font-size-body: 1rem;
     --font-size-sm: 0.875rem;
     --font-size-xs: 0.75rem;
+
+    /* Definizione globale delle variabili CSS (custom properties) */
+
+    /* ===== HUES ===== */
+
+    /* Grigio freddo */
+    --hue-gray: 225;
+
+    /* ===== GRIGI ===== */
+    --color-gray-0: oklch(98% 0.01 var(--hue-gray));
+    --color-gray-1: oklch(94% 0.01 var(--hue-gray));
+    --color-gray-2: oklch(90% 0.01 var(--hue-gray));
+    --color-gray-3: oklch(86% 0.01 var(--hue-gray));
+    --color-gray-4: oklch(82% 0.01 var(--hue-gray));
+    --color-gray-5: oklch(78% 0.01 var(--hue-gray));
+    --color-gray-6: oklch(74% 0.01 var(--hue-gray));
+    --color-gray-7: oklch(70% 0.01 var(--hue-gray));
+    --color-gray-8: oklch(65% 0.01 var(--hue-gray));
+    --color-gray-9: oklch(60% 0.01 var(--hue-gray));
+    --color-gray-10: oklch(50% 0.01 var(--hue-gray));
+    --color-gray-11: oklch(40% 0.01 var(--hue-gray));
+    --color-gray-12: oklch(30% 0.01 var(--hue-gray));
+    --color-gray-13: oklch(20% 0.01 var(--hue-gray));
+    --color-gray-14: oklch(15% 0.01 var(--hue-gray));
+    --color-gray-15: oklch(10% 0.01 var(--hue-gray));
 }
