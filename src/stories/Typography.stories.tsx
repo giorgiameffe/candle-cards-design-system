@@ -22,6 +22,30 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
+    // Argomenti predefiniti per la story (props)
+    args: {
+        // 'children' rappresenta il testo da mostrare nei vari elementi
+        children: 'The quick brown fox'
+    },
 
-    render: () => <div>Typography</div>
+    // Funzione che renderizza l'interfaccia visiva della story
+    render: ({ children }) => (
+        <>
+            {/* Esempio di uso di una classe personalizzata per un font grande (hero) */}
+            <div className="font-size-hero">{children}</div>
+
+            {/* Elementi HTML da h1 a h6 per visualizzare la gerarchia tipografica intestazioni */}
+            <h1>{children}</h1>
+            <h2>{children}</h2>
+            <h3>{children}</h3>
+            <h4>{children}</h4>
+            <h5>{children}</h5>
+            <h6>{children}</h6>
+
+            {/* Classi personalizzate per altre dimensioni di font comuni */}
+            <div className="font-size-body">{children}</div>
+            <div className="font-size-sm">{children}</div>
+            <div className="font-size-xs">{children}</div>
+        </>
+    )
 }
