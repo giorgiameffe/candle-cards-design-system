@@ -14,11 +14,8 @@ const meta: Meta = {
         docs: {
             description: {
                 component:
-                    "La tipografia utilizza una scala basata su variabili CSS con clamp(), " +
-                    "garantendo leggibilità e gerarchia visiva su ogni dispositivo senza l'uso di media queries. " +
-                    "Gerarchia: dallo stile hero fino alla dimensione xs. " +
-                    "Responsivita: i font si ridimensionano automaticamente in base alla larghezza del viewport. " +
-                    "Utilizzo: usa i tag semantici (h1-h6) o le classi utility (.font-size-*)."
+                    "La tipografia utilizza una scala fluida basata sulla funzione clamp() per garantire leggibilità e gerarchia visiva su ogni schermo senza l'uso di media queries. " +
+                    "I font si adattano automaticamente, spaziando dallo stile hero alla dimensione xs, e possono essere applicati sia tramite i tag semantici h1-h6 sia attraverso le classi utility dedicate."
             },
         },
     },

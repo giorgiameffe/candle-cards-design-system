@@ -17,7 +17,7 @@ const meta: Meta = {
             description: {
                 component:
                     "Sistema cromatico basato su spazio colore OKLCH. " +
-                    "La palette include i colori funzionali (Sconto in Ambra, Nuovo in Salvia) " +
+                    "La palette include il colore primario (scala di grigi), i colori funzionali (Sconto in ambra, Nuovo in salvia) " +
                     "e le linee emozionali delle candele (Relax, Energy, Comfort). " +
                     "Clicca su un colore per copiare la variabile CSS negli appunti.",
             },

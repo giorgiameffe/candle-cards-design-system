@@ -17,8 +17,7 @@ const meta: Meta = {
         docs: {
             description: {
                 component:
-                    "Il sistema di spacing utilizza unità fluide basate sulla funzione CSS \`clamp()\`." +
-                    "Questo approccio permette ai margini e ai padding di adattarsi dinamicamente tra una dimensione minima e una massima in base alla larghezza del viewport."
+                    "Il sistema di spacing utilizza unità fluide basate sulla funzione CSS \`clamp()\`. Questo approccio permette ai margini e ai padding di adattarsi dinamicamente tra una dimensione minima e una massima in base alla larghezza del viewport."
             },
         },
     },
