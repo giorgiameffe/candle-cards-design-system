@@ -23,7 +23,7 @@ export default meta;
 // `StoryObj<typeof meta>` è un tipo fornito da Storybook per tipizzare correttamente una storia.
 // Usa `meta` per sapere qual è il componente e quali props accetta.
 
-type Story = StoryObj<typeof meta>
+type Story = StoryObj<typeof meta>;
 
 //  Componente che calcola e restituisce il valore effettivo di una variabile CSS
 //  leggendo lo stile calcolato di `document.body`.
