@@ -17,7 +17,7 @@ const meta: Meta = {
             description: {
                 component:
                     "Sistema cromatico basato su spazio colore OKLCH. " +
-                    "La palette include il colore primario (scala di grigi), i colori funzionali (Sconto in ambra, Nuovo in salvia) " +
+                    "La palette include il colore primario (scala di grigi), i colori funzionali (Sconto in rosso, Nuovo in verde) " +
                     "e le linee emozionali delle candele (Relax, Energy, Comfort). " +
                     "Clicca su un colore per copiare la variabile CSS negli appunti.",
             },
@@ -70,9 +70,9 @@ export const Default: Story = {
             <div className="container">
                 {Array.from({ length: 16 }).map((_, i) => (
                     <ClickToCopy
-                        style={{ backgroundColor: `var(--color-relax-${i})` }}  // Sfondo colore celeste
-                        key={i}                                                 // Chiave unica per React
-                        value={`--color-relax-${i}`}                            // Valore da copiare
+                        style={{ backgroundColor: `var(--color-heavenly-${i})` }}  // Sfondo colore celeste
+                        key={i}                                                    // Chiave unica per React
+                        value={`--color-heavenly-${i}`}                            // Valore da copiare
                     />
                 ))}
             </div>
@@ -82,9 +82,9 @@ export const Default: Story = {
             <div className="container">
                 {Array.from({ length: 16 }).map((_, i) => (
                     <ClickToCopy
-                        style={{ backgroundColor: `var(--color-energy-${i})` }}  // Sfondo colore ocra/arancione 
-                        key={i}                                                 // Chiave unica per React
-                        value={`--color-energy-${i}`}                            // Valore da copiare
+                        style={{ backgroundColor: `var(--color-orange-${i})` }}  // Sfondo colore ocra/arancione 
+                        key={i}                                                  // Chiave unica per React
+                        value={`--color-orange-${i}`}                            // Valore da copiare
                     />
                 ))}
             </div>
@@ -94,9 +94,9 @@ export const Default: Story = {
             <div className="container">
                 {Array.from({ length: 16 }).map((_, i) => (
                     <ClickToCopy
-                        style={{ backgroundColor: `var(--color-comfort-${i})` }}  // Sfondo colore rosa 
-                        key={i}                                                   // Chiave unica per React
-                        value={`--color-comfort-${i}`}                            // Valore da copiare
+                        style={{ backgroundColor: `var(--color-pink-${i})` }}  // Sfondo colore rosa 
+                        key={i}                                                // Chiave unica per React
+                        value={`--color-pink-${i}`}                            // Valore da copiare
                     />
                 ))}
             </div>
@@ -106,21 +106,21 @@ export const Default: Story = {
             <div className="container">
                 {Array.from({ length: 16 }).map((_, i) => (
                     <ClickToCopy
-                        style={{ backgroundColor: `var(--color-new-${i})` }}  // Sfondo colore verde 
-                        key={i}                                                   // Chiave unica per React
-                        value={`--color-new-${i}`}                            // Valore da copiare
+                        style={{ backgroundColor: `var(--color-green-${i})` }}  // Sfondo colore verde 
+                        key={i}                                                 // Chiave unica per React
+                        value={`--color-green-${i}`}                            // Valore da copiare
                     />
                 ))}
             </div>
 
             {/* ===== AMBRA BADGE SCONTO ===== */}
-            <h2 className='font-size-h3'>Amber - Badge Discount</h2>
+            <h2 className='font-size-h3'>Red - Badge Discount</h2>
             <div className="container">
                 {Array.from({ length: 16 }).map((_, i) => (
                     <ClickToCopy
-                        style={{ backgroundColor: `var(--color-discount-${i})` }}  // Sfondo colore rosso 
+                        style={{ backgroundColor: `var(--color-red-${i})` }}  // Sfondo colore rosso 
                         key={i}                                                    // Chiave unica per React
-                        value={`--color-discount-${i}`}                            // Valore da copiare
+                        value={`--color-red-${i}`}                            // Valore da copiare
                     />
                 ))}
             </div>
