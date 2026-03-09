@@ -74,3 +74,12 @@ export const NewBadge: Story = {
     variant: "new",
   },
 };
+
+// Storia del badge con variante "discount"
+export const DiscountBadge: Story = {
+  args: {
+    label: "- 20%",
+    ariaLabel: "Discount Badge",
+    variant: "discount",
+  },
+};

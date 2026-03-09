@@ -29,3 +29,9 @@
     background-color: var(--color-green-2);
     color: var(--color-green-12);
 }
+
+/* Stile per badge discount */
+.badge-discount {
+    background-color: var(--color-red-3);
+    color: var(--color-red-12);
+}
