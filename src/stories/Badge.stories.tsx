@@ -40,7 +40,7 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 // Storia che mostra tutte le varianti del badge contemporaneamente
-export const AllVariants: Story = {
+export const AllBadges: Story = {
 
   render: () => (
 
