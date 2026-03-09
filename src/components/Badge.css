@@ -1,5 +1,11 @@
 .badge {
-    background-color: black;
-    color: white;
-    padding: var(--spacing-xs);
+    padding: var(--spacing-xs) var(--spacing-md);
+    border-radius: 3rem;
+    text-transform: uppercase;
+    font-size: var(--font-size-sm);
+}
+
+.badge-relax {
+    background-color: var(--color-heavenly-3);
+    color: var(--color-heavenly-12);
 }

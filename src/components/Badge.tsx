@@ -1,27 +1,28 @@
+// Import degli stili del componente
 import "../components/Badge.css";
 
+// Definizione delle props del componente Badge
 export type BadgeProps = {
-  label: string;
-  ariaLabel?: string;
-  variant: "relax" | "energy" | "comfort" | "new" | "discount" | "soldOut";
-  style?: React.CSSProperties;
+  label: string; // Testo visibile nel badge
+  ariaLabel?: string; // Testo per accessibilità (screen reader)
+  variant: "relax" | "energy" | "comfort" | "new" | "discount" | "soldOut"; // Varianti di stile disponibili
 }
 
+// Componente Badge
 export const Badge = ({
   label,
   ariaLabel,
-  variant = "relax",
-  style
+  variant = "relax", // Variante di default
 }: BadgeProps) => {
 
   return (
 
     <div
-      className={`badge badge-${variant}`}
-      aria-label={ariaLabel || label}
-      style={style}
+      className={`badge badge-${variant}`} // Classe base + variante dinamica
+      aria-label={ariaLabel || label} // Usa ariaLabel se presente, altrimenti label
+      role="status" // Ruolo ARIA per notifiche di stato
     >
-      {label}
+      {label} {/* Testo mostrato nel badge */}
     </div>
   )
 }
