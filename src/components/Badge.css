@@ -41,3 +41,8 @@
     background-color: var(--color-gray-2);
     color: var(--color-gray-12);
 }
+
+.badge-group {
+    display: flex;
+    gap: var(--spacing-xs);
+}

@@ -39,6 +39,22 @@ export default meta;
 // Tipo per definire le storie
 type Story = StoryObj<typeof meta>;
 
+// Storia che mostra tutte le varianti del badge contemporaneamente
+export const AllVariants: Story = {
+
+  render: () => (
+
+    <div className='badge-group'>
+      <Badge variant="relax" label="relax" />
+      <Badge variant="energy" label="energia" />
+      <Badge variant="comfort" label="comfort" />
+      <Badge variant="new" label="novità" />
+      <Badge variant="discount" label="- 20%" />
+      <Badge variant="soldOut" label="sold out" />
+    </div>
+  ),
+};
+
 // Storia del badge con variante "relax"
 export const RelaxBadge: Story = {
   args: {
