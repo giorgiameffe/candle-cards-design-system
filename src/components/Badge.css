@@ -1,3 +1,4 @@
+/* Stile di base del badge */
 .badge {
     padding: var(--spacing-xs) var(--spacing-md);
     border-radius: 3rem;
@@ -5,12 +6,20 @@
     font-size: var(--font-size-sm);
 }
 
+/* Stile per badge relax */
 .badge-relax {
     background-color: var(--color-heavenly-3);
     color: var(--color-heavenly-12);
 }
 
+/* Stile per badge energia */
 .badge-energy {
     background-color: var(--color-orange-3);
     color: var(--color-orange-12);
+}
+
+/* Stile per badge comfort */
+.badge-comfort {
+    background-color: var(--color-pink-3);
+    color: var(--color-pink-12);
 }

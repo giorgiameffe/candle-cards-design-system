@@ -42,7 +42,7 @@ type Story = StoryObj<typeof meta>;
 // Storia del badge con variante "relax"
 export const RelaxBadge: Story = {
   args: {
-    label: "Relax",
+    label: "relax",
     ariaLabel: "Relax Badge",
     variant: "relax",
   },
@@ -51,8 +51,17 @@ export const RelaxBadge: Story = {
 // Storia del badge con variante "energy"
 export const EnergyBadge: Story = {
   args: {
-    label: "Energia",
+    label: "energia",
     ariaLabel: "Energy Badge",
     variant: "energy",
+  },
+};
+
+// Storia del badge con variante "comfort"
+export const ComfortBadge: Story = {
+  args: {
+    label: "comfort",
+    ariaLabel: "Comfort Badge",
+    variant: "comfort",
   },
 };
