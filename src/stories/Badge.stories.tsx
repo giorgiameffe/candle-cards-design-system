@@ -83,3 +83,12 @@ export const DiscountBadge: Story = {
     variant: "discount",
   },
 };
+
+// Storia del badge con variante "soldOut"
+export const SoldOutBadge: Story = {
+  args: {
+    label: "sold out",
+    ariaLabel: "Sold Out Badge",
+    variant: "soldOut",
+  },
+};
