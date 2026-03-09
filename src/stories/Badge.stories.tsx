@@ -1,11 +1,11 @@
 import type { Meta, StoryObj } from '@storybook/react-vite';
 
-import { Button } from "../components/Button"
+import { Badge } from "../components/Badge"
 
-const meta: Meta<typeof Button> = {
+const meta: Meta<typeof Badge> = {
 
-  title: 'Example/Button',
-  component: Button,
+  title: 'Atoms/Badge',
+  component: Badge,
   parameters: {
     layout: 'centered',
   },
@@ -18,5 +18,5 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
 
-  render: () => <Button />
+  render: () => <Badge />
 }
