@@ -65,3 +65,12 @@ export const ComfortBadge: Story = {
     variant: "comfort",
   },
 };
+
+// Storia del badge con variante "new"
+export const NewBadge: Story = {
+  args: {
+    label: "novità",
+    ariaLabel: "New Badge",
+    variant: "new",
+  },
+};

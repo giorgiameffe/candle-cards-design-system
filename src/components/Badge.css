@@ -8,18 +8,24 @@
 
 /* Stile per badge relax */
 .badge-relax {
-    background-color: var(--color-heavenly-3);
+    background-color: var(--color-heavenly-2);
     color: var(--color-heavenly-12);
 }
 
 /* Stile per badge energia */
 .badge-energy {
-    background-color: var(--color-orange-3);
+    background-color: var(--color-orange-2);
     color: var(--color-orange-12);
 }
 
 /* Stile per badge comfort */
 .badge-comfort {
-    background-color: var(--color-pink-3);
+    background-color: var(--color-pink-2);
     color: var(--color-pink-12);
+}
+
+/* Stile per badge new */
+.badge-new {
+    background-color: var(--color-green-2);
+    color: var(--color-green-12);
 }
