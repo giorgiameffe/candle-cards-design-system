@@ -1,5 +1,5 @@
 // Import degli stili del componente
-import "../components/Badge.css";
+import "./Badge.css";
 
 // Definizione delle props del componente Badge
 export type BadgeProps = {

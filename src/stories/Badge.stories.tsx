@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react-vite';
 
 // Componente da documentare in Storybook
-import { Badge } from "../components/Badge"
+import { Badge } from "../components/Badge/Badge"
 
 // Configurazione della storia del componente
 const meta: Meta<typeof Badge> = {
