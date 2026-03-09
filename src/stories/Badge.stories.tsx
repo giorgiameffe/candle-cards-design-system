@@ -47,3 +47,12 @@ export const RelaxBadge: Story = {
     variant: "relax",
   },
 };
+
+// Storia del badge con variante "energy"
+export const EnergyBadge: Story = {
+  args: {
+    label: "Energia",
+    ariaLabel: "Energy Badge",
+    variant: "energy",
+  },
+};

@@ -9,3 +9,8 @@
     background-color: var(--color-heavenly-3);
     color: var(--color-heavenly-12);
 }
+
+.badge-energy {
+    background-color: var(--color-orange-3);
+    color: var(--color-orange-12);
+}
