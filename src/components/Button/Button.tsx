@@ -6,10 +6,30 @@ export type ButtonProps = {
     label: string; // Testo visibile nel badge
     ariaLabel?: string; // Testo per accessibilità (screen reader)
     disabled?: boolean; // Indica se il bottone è disabilitato
-    onClick?: () => void; // Callback quando si clicca sul link
+    onClick?: () => void; // Callback quando si clicca sul bottone
+    size?: "small" | "medium" | "large"; // Dimensione del bottone
 }
 
-export const Button = ({ label }: ButtonProps) => {
+// Componente Bottone
+export const Button = ({
+    label,
+    ariaLabel,
+    disabled = false,
+    onClick
+}: ButtonProps) => {
 
-    return <button className="btn">{label}</button>
+    // 2. Creiamo una variabile per il testo da mostrare
+    const currentLabel = disabled ? "Non disponibile" : label;
+
+    return (
+        <button
+            className="btn"
+            aria-label={ariaLabel || currentLabel}
+            disabled={disabled}
+            onClick={onClick}
+        >
+            {/* 4. Cambiamo il testo visualizzato qui */}
+            {currentLabel}
+        </button>
+    )
 }

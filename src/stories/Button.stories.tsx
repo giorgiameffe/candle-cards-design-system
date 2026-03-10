@@ -19,10 +19,10 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 // Storia del bottone Default "Aggiungi al carrello"
-export const DefaultButton: Story = {
+export const Default: Story = {
     args: {
         label: "Aggiungi al carrello",
-        ariaLabel: "Aggiungi al carrello",
-        disabled: false
+        disabled: false,
+        size: "medium"
     }
 }
