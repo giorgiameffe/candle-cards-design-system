@@ -12,6 +12,25 @@ const meta: Meta<typeof Button> = {
         // Centra il componente nella preview
         layout: 'centered',
     },
+    argTypes: {
+        // Menu a tendina per le taglie
+        size: {
+            control: { type: 'select' },
+            options: ['small', 'medium', 'large'],
+            description: 'Definisce la dimensione del bottone',
+        },
+        // Switch on/off per lo stato disabilitato
+        disabled: {
+            control: 'boolean',
+            description: 'Disabilita il bottone e cambia il testo in "Non disponibile"',
+        },
+        label: {
+            control: 'text',
+            description: 'Il testo visualizzato all\'interno del bottone',
+        },
+        // Nasconde o configura l'evento onClick nei log di Storybook
+        onClick: { action: 'clicked' },
+    },
 }
 
 export default meta;
