@@ -7,21 +7,21 @@
 }
 
 /* Stile per badge relax */
-.badge-relax {
-    background-color: var(--color-heavenly-2);
-    color: var(--color-heavenly-12);
+.badge-floral {
+    background-color: var(--color-pink-3);
+    color: var(--color-pink-12);
 }
 
 /* Stile per badge energia */
-.badge-energy {
-    background-color: var(--color-orange-2);
+.badge-citrus {
+    background-color: var(--color-orange-3);
     color: var(--color-orange-12);
 }
 
 /* Stile per badge comfort */
-.badge-comfort {
-    background-color: var(--color-pink-2);
-    color: var(--color-pink-12);
+.badge-sweet {
+    background-color: var(--color-amber-3);
+    color: var(--color-amber-12);
 }
 
 /* Stile per badge new */

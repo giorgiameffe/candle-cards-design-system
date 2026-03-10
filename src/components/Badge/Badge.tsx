@@ -5,14 +5,14 @@ import "./Badge.css";
 export type BadgeProps = {
   label: string; // Testo visibile nel badge
   ariaLabel?: string; // Testo per accessibilità (screen reader)
-  variant: "relax" | "energy" | "comfort" | "new" | "discount" | "soldOut"; // Varianti di stile disponibili
+  variant: "floral" | "sweet" | "citrus" | "new" | "discount" | "soldOut"; // Varianti di stile disponibili
 }
 
 // Componente Badge
 export const Badge = ({
   label,
   ariaLabel,
-  variant = "relax", // Variante di default
+  variant = "floral", // Variante di default
 }: BadgeProps) => {
 
   return (

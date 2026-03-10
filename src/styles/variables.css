@@ -27,8 +27,8 @@
 
     /* Grigio freddo */
     --hue-gray: 225;
-    /* Celeste */
-    --hue-heavenly: 230;
+    /* Ambra */
+    --hue-amber: 75;
     /* Ocra/Arancione */
     --hue-orange: 55;
     /* Rosa */
@@ -56,23 +56,23 @@
     --color-gray-14: oklch(15% 0.01 var(--hue-gray));
     --color-gray-15: oklch(10% 0.01 var(--hue-gray));
 
-    /* ===== CELESTE BADGE RELAX ===== */
-    --color-heavenly-0: oklch(98% 0.01 var(--hue-heavenly));
-    --color-heavenly-1: oklch(94% 0.02 var(--hue-heavenly));
-    --color-heavenly-2: oklch(90% 0.04 var(--hue-heavenly));
-    --color-heavenly-3: oklch(86% 0.06 var(--hue-heavenly));
-    --color-heavenly-4: oklch(82% 0.08 var(--hue-heavenly));
-    --color-heavenly-5: oklch(78% 0.09 var(--hue-heavenly));
-    --color-heavenly-6: oklch(74% 0.10 var(--hue-heavenly));
-    --color-heavenly-7: oklch(70% 0.10 var(--hue-heavenly));
-    --color-heavenly-8: oklch(65% 0.09 var(--hue-heavenly));
-    --color-heavenly-9: oklch(60% 0.08 var(--hue-heavenly));
-    --color-heavenly-10: oklch(50% 0.07 var(--hue-heavenly));
-    --color-heavenly-11: oklch(40% 0.06 var(--hue-heavenly));
-    --color-heavenly-12: oklch(30% 0.05 var(--hue-heavenly));
-    --color-heavenly-13: oklch(20% 0.04 var(--hue-heavenly));
-    --color-heavenly-14: oklch(15% 0.03 var(--hue-heavenly));
-    --color-heavenly-15: oklch(10% 0.02 var(--hue-heavenly));
+    /* ===== ROSA BADGE COMFORT ===== */
+    --color-pink-0: oklch(98% 0.02 var(--hue-pink));
+    --color-pink-1: oklch(94% 0.04 var(--hue-pink));
+    --color-pink-2: oklch(90% 0.06 var(--hue-pink));
+    --color-pink-3: oklch(86% 0.08 var(--hue-pink));
+    --color-pink-4: oklch(82% 0.10 var(--hue-pink));
+    --color-pink-5: oklch(78% 0.12 var(--hue-pink));
+    --color-pink-6: oklch(74% 0.13 var(--hue-pink));
+    --color-pink-7: oklch(70% 0.14 var(--hue-pink));
+    --color-pink-8: oklch(65% 0.13 var(--hue-pink));
+    --color-pink-9: oklch(60% 0.12 var(--hue-pink));
+    --color-pink-10: oklch(50% 0.11 var(--hue-pink));
+    --color-pink-11: oklch(40% 0.09 var(--hue-pink));
+    --color-pink-12: oklch(30% 0.07 var(--hue-pink));
+    --color-pink-13: oklch(20% 0.05 var(--hue-pink));
+    --color-pink-14: oklch(15% 0.03 var(--hue-pink));
+    --color-pink-15: oklch(10% 0.02 var(--hue-pink));
 
     /* ===== OCRA/ARANCIONE BADGE ENERGY ===== */
     --color-orange-0: oklch(98% 0.01 var(--hue-orange));
@@ -92,23 +92,23 @@
     --color-orange-14: oklch(15% 0.04 var(--hue-orange));
     --color-orange-15: oklch(10% 0.03 var(--hue-orange));
 
-    /* ===== ROSA BADGE COMFORT ===== */
-    --color-pink-0: oklch(98% 0.02 var(--hue-pink));
-    --color-pink-1: oklch(94% 0.04 var(--hue-pink));
-    --color-pink-2: oklch(90% 0.06 var(--hue-pink));
-    --color-pink-3: oklch(86% 0.08 var(--hue-pink));
-    --color-pink-4: oklch(82% 0.10 var(--hue-pink));
-    --color-pink-5: oklch(78% 0.12 var(--hue-pink));
-    --color-pink-6: oklch(74% 0.13 var(--hue-pink));
-    --color-pink-7: oklch(70% 0.14 var(--hue-pink));
-    --color-pink-8: oklch(65% 0.13 var(--hue-pink));
-    --color-pink-9: oklch(60% 0.12 var(--hue-pink));
-    --color-pink-10: oklch(50% 0.11 var(--hue-pink));
-    --color-pink-11: oklch(40% 0.09 var(--hue-pink));
-    --color-pink-12: oklch(30% 0.07 var(--hue-pink));
-    --color-pink-13: oklch(20% 0.05 var(--hue-pink));
-    --color-pink-14: oklch(15% 0.03 var(--hue-pink));
-    --color-pink-15: oklch(10% 0.02 var(--hue-pink));
+    /* ===== AMBRA BADGE DOLCE  ===== */
+    --color-amber-0: oklch(99% 0.01 var(--hue-amber));
+    --color-amber-1: oklch(96% 0.04 var(--hue-amber));
+    --color-amber-2: oklch(92% 0.08 var(--hue-amber));
+    --color-amber-3: oklch(88% 0.12 var(--hue-amber));
+    --color-amber-4: oklch(84% 0.15 var(--hue-amber));
+    --color-amber-5: oklch(80% 0.18 var(--hue-amber));
+    --color-amber-6: oklch(75% 0.20 var(--hue-amber));
+    --color-amber-7: oklch(70% 0.19 var(--hue-amber));
+    --color-amber-8: oklch(65% 0.17 var(--hue-amber));
+    --color-amber-9: oklch(60% 0.15 var(--hue-amber));
+    --color-amber-10: oklch(50% 0.13 var(--hue-amber));
+    --color-amber-11: oklch(40% 0.10 var(--hue-amber));
+    --color-amber-12: oklch(30% 0.08 var(--hue-amber));
+    --color-amber-13: oklch(22% 0.06 var(--hue-amber));
+    --color-amber-14: oklch(15% 0.04 var(--hue-amber));
+    --color-amber-15: oklch(10% 0.02 var(--hue-amber));
 
     /* ===== VERDE BADGE NUOVO PRODOTTO ===== */
     --color-green-0: oklch(99% 0.03 var(--hue-green));

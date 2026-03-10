@@ -65,32 +65,8 @@ export const Default: Story = {
                 ))}
             </div>
 
-            {/* --- CELESTE BADGE RELAX --- */}
-            <h2 className='font-size-h3'>Sky Blue - Badge Relax</h2>
-            <div className="container">
-                {Array.from({ length: 16 }).map((_, i) => (
-                    <ClickToCopy
-                        style={{ backgroundColor: `var(--color-heavenly-${i})` }}  // Sfondo colore celeste
-                        key={i}                                                    // Chiave unica per React
-                        value={`--color-heavenly-${i}`}                            // Valore da copiare
-                    />
-                ))}
-            </div>
-
-            {/* ===== OCRA/ARANCIONE BADGE ENERGY ===== */}
-            <h2 className='font-size-h3'>Ocra/Orange - Badge Energy</h2>
-            <div className="container">
-                {Array.from({ length: 16 }).map((_, i) => (
-                    <ClickToCopy
-                        style={{ backgroundColor: `var(--color-orange-${i})` }}  // Sfondo colore ocra/arancione 
-                        key={i}                                                  // Chiave unica per React
-                        value={`--color-orange-${i}`}                            // Valore da copiare
-                    />
-                ))}
-            </div>
-
-            {/* ===== ROSA BADGE COMFORT ===== */}
-            <h2 className='font-size-h3'>Pink - Badge Comfort</h2>
+            {/* ===== ROSA BADGE FLOREALE ===== */}
+            <h2 className='font-size-h3'>Pink - Floral Badge</h2>
             <div className="container">
                 {Array.from({ length: 16 }).map((_, i) => (
                     <ClickToCopy
@@ -101,8 +77,32 @@ export const Default: Story = {
                 ))}
             </div>
 
-            {/* ===== VERDE SALVIA BADGE NUOVO ===== */}
-            <h2 className='font-size-h3'>Green - Badge New</h2>
+            {/* ===== OCRA/ARANCIONE BADGE AGRUMI ===== */}
+            <h2 className='font-size-h3'>Ocra/Orange - Citrus Badge</h2>
+            <div className="container">
+                {Array.from({ length: 16 }).map((_, i) => (
+                    <ClickToCopy
+                        style={{ backgroundColor: `var(--color-orange-${i})` }}  // Sfondo colore ocra/arancione 
+                        key={i}                                                  // Chiave unica per React
+                        value={`--color-orange-${i}`}                            // Valore da copiare
+                    />
+                ))}
+            </div>
+
+            {/* --- AMBRA BADGE DOLCE --- */}
+            <h2 className='font-size-h3'>Amber - Sweet Badge</h2>
+            <div className="container">
+                {Array.from({ length: 16 }).map((_, i) => (
+                    <ClickToCopy
+                        style={{ backgroundColor: `var(--color-amber-${i})` }}  // Sfondo colore celeste
+                        key={i}                                                    // Chiave unica per React
+                        value={`--color-amber-${i}`}                            // Valore da copiare
+                    />
+                ))}
+            </div>
+
+            {/* ===== VERDE BADGE NUOVO ===== */}
+            <h2 className='font-size-h3'>Green - New Badge</h2>
             <div className="container">
                 {Array.from({ length: 16 }).map((_, i) => (
                     <ClickToCopy
@@ -113,8 +113,8 @@ export const Default: Story = {
                 ))}
             </div>
 
-            {/* ===== AMBRA BADGE SCONTO ===== */}
-            <h2 className='font-size-h3'>Red - Badge Discount</h2>
+            {/* ===== ROSSO BADGE SCONTO ===== */}
+            <h2 className='font-size-h3'>Red - Discount Badge</h2>
             <div className="container">
                 {Array.from({ length: 16 }).map((_, i) => (
                     <ClickToCopy

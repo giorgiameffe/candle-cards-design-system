@@ -20,7 +20,7 @@ const meta: Meta<typeof Badge> = {
   argTypes: {
     variant: {
       control: 'select', // selezione da menu
-      options: ['relax', 'energy', 'comfort', 'new', 'discount', 'soldOut'],
+      options: ['floral', 'sweet', 'citrus', 'new', 'discount', 'soldOut'],
       description: 'Determina lo stile cromatico del badge'
     },
     label: {
@@ -45,9 +45,9 @@ export const AllBadges: Story = {
   render: () => (
 
     <div className='badge-group'>
-      <Badge variant="relax" label="relax" />
-      <Badge variant="energy" label="energia" />
-      <Badge variant="comfort" label="comfort" />
+      <Badge variant="floral" label="floreale" />
+      <Badge variant="citrus" label="agrumata" />
+      <Badge variant="sweet" label="dolce" />
       <Badge variant="new" label="novità" />
       <Badge variant="discount" label="- 20%" />
       <Badge variant="soldOut" label="sold out" />
@@ -56,29 +56,29 @@ export const AllBadges: Story = {
 };
 
 // Storia del badge con variante "relax"
-export const RelaxBadge: Story = {
+export const FloralBadge: Story = {
   args: {
-    label: "relax",
-    ariaLabel: "Relax Badge",
-    variant: "relax",
+    label: "floreale",
+    ariaLabel: "Floral Badge",
+    variant: "floral",
   },
 };
 
 // Storia del badge con variante "energy"
-export const EnergyBadge: Story = {
+export const CitrusBadge: Story = {
   args: {
-    label: "energia",
-    ariaLabel: "Energy Badge",
-    variant: "energy",
+    label: "agrumata",
+    ariaLabel: "Citrus Badge",
+    variant: "citrus",
   },
 };
 
 // Storia del badge con variante "comfort"
-export const ComfortBadge: Story = {
+export const SweetBadge: Story = {
   args: {
-    label: "comfort",
-    ariaLabel: "Comfort Badge",
-    variant: "comfort",
+    label: "dolce",
+    ariaLabel: "Sweet Badge",
+    variant: "sweet",
   },
 };
 
