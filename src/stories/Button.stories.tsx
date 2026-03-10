@@ -12,6 +12,8 @@ const meta: Meta<typeof Button> = {
         // Centra il componente nella preview
         layout: 'centered',
     },
+    // Abilita la generazione automatica della documentazione
+    tags: ['autodocs'],
     argTypes: {
         // Menu a tendina per le taglie
         size: {
