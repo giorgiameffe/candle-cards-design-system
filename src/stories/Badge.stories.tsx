@@ -7,7 +7,7 @@ import { Badge } from "../components/Badge/Badge"
 const meta: Meta<typeof Badge> = {
 
   // Posizione del componente nella sidebar di Storybook
-  title: 'Atoms/Badge',
+  title: 'Components/Atoms/Badge',
   // Componente associato alla storia
   component: Badge,
   parameters: {
