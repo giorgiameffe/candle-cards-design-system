@@ -1,4 +1,31 @@
 .btn {
     background: none;
     border: none;
+    background-color: var(--color-gray-14);
+    color: var(--color-gray-0);
+    border-radius: 3rem;
+}
+
+/* Bottone small */
+.btn-small {
+    padding: var(--spacing-xs) var(--spacing-sm);
+    font-size: var(--font-size-sm);
+}
+
+/* Bottone default/medium */
+.btn-medium {
+    padding: var(--spacing-sm) var(--spacing-md);
+    font-size: var(--font-size-body);
+}
+
+/* Bottone large */
+.btn-large {
+    padding: var(--spacing-md) var(--spacing-lg);
+    font-size: var(--font-size-h6);
+}
+
+/* Bottone disabilitato */
+.btn:disabled {
+    background-color: var(--color-gray-1);
+    color: var(--color-gray-10);
 }

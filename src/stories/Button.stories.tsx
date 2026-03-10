@@ -60,7 +60,7 @@ export const OutOfStockButton: Story = {
 // Storia del bottone Small
 export const SmallButton: Story = {
     args: {
-        label: "Small",
+        label: "Aggiungi al carrello",
         disabled: false,
         size: "small"
     }
@@ -69,7 +69,7 @@ export const SmallButton: Story = {
 // Storia del bottone Large
 export const LargeButton: Story = {
     args: {
-        label: "Large",
+        label: "Aggiungi al carrello",
         disabled: false,
         size: "large"
     }
