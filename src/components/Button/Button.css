@@ -29,3 +29,10 @@
     background-color: var(--color-gray-1);
     color: var(--color-gray-10);
 }
+
+/* Stile per gruppo di bottoni */
+.btn-group {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}

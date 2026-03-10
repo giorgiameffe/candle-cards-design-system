@@ -15,7 +15,7 @@ export const Button = ({
     label,
     ariaLabel,
     disabled = false,
-    size,
+    size = "medium",
     onClick
 }: ButtonProps) => {
 

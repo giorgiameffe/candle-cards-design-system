@@ -39,20 +39,24 @@ export default meta;
 
 type Story = StoryObj<typeof meta>;
 
+// Storia con il gruppo di bottoni nelle varie grandezze
+export const AllButtons: Story = {
+
+    render: () => (
+
+        <div className='btn-group'>
+            <Button size="small" label="Aggiungi al carrello" />
+            <Button size="medium" label="Aggiungi al carrello" />
+            <Button size="large" label="Aggiungi al carrello" />
+        </div>
+    ),
+}
+
 // Storia del bottone Default "Aggiungi al carrello"
 export const DefaultButton: Story = {
     args: {
         label: "Aggiungi al carrello",
         disabled: false,
-        size: "medium"
-    }
-}
-
-// Storia del bottone Out of Stock
-export const OutOfStockButton: Story = {
-    args: {
-        label: "Non disponibile",
-        disabled: true,
         size: "medium"
     }
 }
@@ -72,5 +76,14 @@ export const LargeButton: Story = {
         label: "Aggiungi al carrello",
         disabled: false,
         size: "large"
+    }
+}
+
+// Storia del bottone Out of Stock
+export const OutOfStockButton: Story = {
+    args: {
+        label: "Non disponibile",
+        disabled: true,
+        size: "medium"
     }
 }
