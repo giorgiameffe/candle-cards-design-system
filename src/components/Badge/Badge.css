@@ -6,19 +6,19 @@
     font-size: var(--font-size-sm);
 }
 
-/* Stile per badge relax */
+/* Stile per badge floreale */
 .badge-floral {
     background-color: var(--color-pink-3);
     color: var(--color-pink-12);
 }
 
-/* Stile per badge energia */
+/* Stile per badge agrumi */
 .badge-citrus {
     background-color: var(--color-orange-3);
     color: var(--color-orange-12);
 }
 
-/* Stile per badge comfort */
+/* Stile per badge dolce */
 .badge-sweet {
     background-color: var(--color-amber-3);
     color: var(--color-amber-12);

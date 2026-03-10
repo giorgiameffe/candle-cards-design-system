@@ -19,10 +19,37 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 // Storia del bottone Default "Aggiungi al carrello"
-export const Default: Story = {
+export const DefaultButton: Story = {
     args: {
         label: "Aggiungi al carrello",
         disabled: false,
         size: "medium"
+    }
+}
+
+// Storia del bottone Out of Stock
+export const OutOfStockButton: Story = {
+    args: {
+        label: "Non disponibile",
+        disabled: true,
+        size: "medium"
+    }
+}
+
+// Storia del bottone Small
+export const SmallButton: Story = {
+    args: {
+        label: "Small",
+        disabled: false,
+        size: "small"
+    }
+}
+
+// Storia del bottone Large
+export const LargeButton: Story = {
+    args: {
+        label: "Large",
+        disabled: false,
+        size: "large"
     }
 }
