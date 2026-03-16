@@ -4,6 +4,7 @@ import { Card } from "../components/Card/Card";
 
 import lavanderCandle from "../assets/img/candle-lavanda.jpg";
 import orangeCandle from "../assets/img/candle-arancia.png";
+import vanillaCandle from "../assets/img/candle-vaniglia.png";
 
 const meta: Meta<typeof Card> = {
 
@@ -42,5 +43,16 @@ export const OrangeDefaultCard: Story = {
         price: "13,90 €",
         category: "citrus",
         categoryLabel: "agrumata"
+    }
+}
+
+export const VanillaDefaultCard: Story = {
+    args: {
+        image: vanillaCandle,
+        title: "Vanilla Bourbon",
+        description: "Un aroma dolce che avvolge la stanza, creando un'atmosfera intima.",
+        price: "14,90 €",
+        category: "sweet",
+        categoryLabel: "dolce"
     }
 }
