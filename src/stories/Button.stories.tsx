@@ -1,7 +1,9 @@
 import type { Meta, StoryObj } from "@storybook/react-vite";
 
+// Importazione Componente Button
 import { Button } from "../components/Button/Button";
 
+// Configurazione della storia del componente
 const meta: Meta<typeof Button> = {
 
     // Posizione del componente nella sidebar di Storybook

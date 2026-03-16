@@ -1,11 +1,14 @@
 import type { Meta, StoryObj } from "@storybook/react-vite";
 
+// Importazione Componente Card
 import { Card } from "../components/Card/Card";
 
+// Importazioni immagini candele
 import lavanderCandle from "../assets/img/candle-lavanda.jpg";
 import orangeCandle from "../assets/img/candle-arancia.png";
 import vanillaCandle from "../assets/img/candle-vaniglia.png";
 
+// Configurazione della storia del componente
 const meta: Meta<typeof Card> = {
 
     // Posizione del componente nella sidebar di Storybook
@@ -24,6 +27,7 @@ export default meta;
 
 type Story = StoryObj<typeof meta>;
 
+// Storia default della candela alla Lavanda 
 export const LavanderDefaultCard: Story = {
     args: {
         image: lavanderCandle,
@@ -35,6 +39,7 @@ export const LavanderDefaultCard: Story = {
     }
 }
 
+// Storia default della candela all'Arancia
 export const OrangeDefaultCard: Story = {
     args: {
         image: orangeCandle,
@@ -46,6 +51,7 @@ export const OrangeDefaultCard: Story = {
     }
 }
 
+// Storia default della candela alla Vaniglia
 export const VanillaDefaultCard: Story = {
     args: {
         image: vanillaCandle,
