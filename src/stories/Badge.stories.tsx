@@ -50,7 +50,7 @@ export const AllBadges: Story = {
       <Badge variant="sweet" label="dolce" />
       <Badge variant="new" label="novità" />
       <Badge variant="discount" label="- 20%" />
-      <Badge variant="soldOut" label="sold out" />
+      <Badge variant="soldOut" label="esaurito" />
     </div>
   ),
 };
@@ -103,7 +103,7 @@ export const DiscountBadge: Story = {
 // Storia del badge con variante "soldOut"
 export const SoldOutBadge: Story = {
   args: {
-    label: "sold out",
+    label: "esaurito",
     ariaLabel: "Sold Out Badge",
     variant: "soldOut",
   },

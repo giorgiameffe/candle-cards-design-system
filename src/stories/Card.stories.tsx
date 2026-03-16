@@ -91,3 +91,16 @@ export const NewArrivalCandle: Story = {
         statusLabel: "novità"
     }
 }
+
+export const SoldOutCandle: Story = {
+    args: {
+        image: vanillaCandle,
+        title: "Vanilla Bourbon",
+        description: "Un aroma dolce che avvolge la stanza, creando un'atmosfera intima.",
+        price: "14,90 €",
+        category: "sweet",
+        categoryLabel: "dolce",
+        status: "soldOut",
+        statusLabel: "esaurito"
+    }
+}
