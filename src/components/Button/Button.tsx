@@ -25,7 +25,7 @@ export const Button = ({
     return (
         <button
             className={`btn btn-${size}`}
-            aria-label={ariaLabel || currentLabel}
+            aria-label={ariaLabel ?? currentLabel}
             disabled={disabled}
             onClick={onClick}
         >

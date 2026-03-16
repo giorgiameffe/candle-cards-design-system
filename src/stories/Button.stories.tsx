@@ -82,7 +82,7 @@ export const LargeButton: Story = {
 // Storia del bottone Out of Stock
 export const OutOfStockButton: Story = {
     args: {
-        label: "Non disponibile",
+        label: "Aggiungi al carrello",
         disabled: true,
         size: "medium"
     }

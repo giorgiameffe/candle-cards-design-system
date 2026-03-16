@@ -26,8 +26,8 @@
 
 /* Bottone disabilitato */
 .btn:disabled {
-    background-color: var(--color-gray-1);
-    color: var(--color-gray-10);
+    background-color: var(--color-gray-11);
+    color: var(--color-gray-0);
 }
 
 /* Stile per gruppo di bottoni */
