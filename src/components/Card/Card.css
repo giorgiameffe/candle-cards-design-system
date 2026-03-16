@@ -31,11 +31,23 @@
     font-style: italic;
 }
 
-.card-price {
-    font-weight: 600;
+.card-price-container {
     margin-bottom: var(--spacing-md);
 }
 
+.card-old-price {
+    color: var(--color-gray-10);
+    text-decoration: line-through;
+    font-weight: 400;
+    margin-right: 0.5rem;
+    font-size: var(--font-size-sm);
+}
+
+.card-price {
+    font-weight: 700;
+}
+
+/* Badge status */
 .card-header .badge {
     position: absolute;
     top: 1.5rem;

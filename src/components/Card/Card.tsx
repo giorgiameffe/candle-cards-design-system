@@ -8,6 +8,7 @@ export type CardProps = {
     title: string;
     description: string;
     price: string;
+    oldPrice?: string;
     category: "floral" | "sweet" | "citrus";
     categoryLabel: string;
     status?: "new" | "discount" | "soldOut";
@@ -19,6 +20,7 @@ export const Card = ({
     title,
     description,
     price,
+    oldPrice,
     category,
     categoryLabel,
     status,
@@ -45,7 +47,7 @@ export const Card = ({
             </div>
 
             {/* Body della Card */}
-            <div>
+            <div className="card-body">
                 <div className="card-badge-category">
                     <Badge
                         variant={category}
@@ -54,7 +56,10 @@ export const Card = ({
                 </div>
                 <h2 className="card-title">{title}</h2>
                 <p className="card-description">{description}</p>
-                <div className="card-price">{price}</div>
+                <div className="card-price-container">
+                    {oldPrice && <span className="card-old-price">{oldPrice}</span>}
+                    <span className="card-price">{price}</span>
+                </div>
             </div>
 
             {/* Footer della card */}
