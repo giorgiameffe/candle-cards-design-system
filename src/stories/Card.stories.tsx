@@ -1,7 +1,9 @@
 import type { Meta, StoryObj } from "@storybook/react-vite";
 
 import { Card } from "../components/Card/Card";
+
 import lavanderCandle from "../assets/img/candle-lavanda.jpg";
+import orangeCandle from "../assets/img/candle-arancia.png";
 
 const meta: Meta<typeof Card> = {
 
@@ -21,12 +23,24 @@ export default meta;
 
 type Story = StoryObj<typeof meta>;
 
-export const LavanderDefault: Story = {
+export const LavanderDefaultCard: Story = {
     args: {
         image: lavanderCandle,
         title: "Lavanda di Provenza",
         description: "Olio essenziale purissimo per conciliare il relax e il riposo notturno.",
         price: "14,90 €",
-        category: "floral"
+        category: "floral",
+        categoryLabel: "floreale"
+    }
+}
+
+export const OrangeDefaultCard: Story = {
+    args: {
+        image: orangeCandle,
+        title: "Agrumi di Sicilia",
+        description: "Una sferzata di energia pura con note vivaci di arancia amara e bergamotto.",
+        price: "13,90 €",
+        category: "citrus",
+        categoryLabel: "agrumata"
     }
 }
