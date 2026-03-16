@@ -1,6 +1,8 @@
 import { Badge } from "../Badge/Badge";
 import { Button } from "../Button/Button";
 
+import "./Card.css";
+
 export type CardProps = {
     image: string;
     title: string;
@@ -24,28 +26,30 @@ export const Card = ({
 
     return (
 
-        <article>
+        <article className="card">
 
             {/* Header della Card */}
-            <div>
+            <div className="card-header">
                 {status && (
                     <Badge
                         variant={status}
                         label={status === "discount" ? "- 20%" : status} />
                 )}
 
-                <img src={image} alt={title} />
+                <img src={image} alt={title} className="card-image" />
             </div>
 
             {/* Body della Card */}
             <div>
-                <Badge
-                    variant={category}
-                    label={category}
-                />
-                <h2>{title}</h2>
-                <p>{description}</p>
-                <div>{price}</div>
+                <div className="card-badge-category">
+                    <Badge
+                        variant={category}
+                        label={category}
+                    />
+                </div>
+                <h2 className="card-title">{title}</h2>
+                <p className="card-description">{description}</p>
+                <div className="card-price">{price}</div>
             </div>
 
             {/* Footer della card */}

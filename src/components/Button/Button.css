@@ -36,3 +36,7 @@
     gap: 1rem;
     align-items: center;
 }
+
+.card .btn {
+    width: 100%;
+}

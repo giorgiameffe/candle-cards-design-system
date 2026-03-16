@@ -8,8 +8,9 @@
 }
 
 * {
-    /* Rimuove i margini predefiniti di tutti gli elementi */
+    /* Rimuove i margini e padding predefiniti di tutti gli elementi */
     margin: 0;
+    padding: 0;
 }
 
 /* Miglioramenti alla leggibilità del testo */

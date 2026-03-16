@@ -1,0 +1,37 @@
+.card {
+    max-width: 300px;
+    border: 1px solid var(--color-gray-2);
+    border-radius: 1rem;
+    padding: var(--spacing-sm);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+}
+
+.card-image {
+    width: 100%;
+    object-fit: contain;
+    border-radius: 0.25rem;
+}
+
+.card-badge-category {
+    display: flex;
+}
+
+.card-title {
+    font-size: var(--font-size-h5);
+    line-height: 1.5;
+}
+
+.card-description {
+    font-size: var(--font-size-body);
+    color: var(--color-gray-12);
+    margin-bottom: var(--spacing-xs);
+    font-style: italic;
+}
+
+.card-price {
+    font-weight: 600;
+    font-size: var(--font-size-h6);
+    margin-bottom: var(--spacing-md);
+}
