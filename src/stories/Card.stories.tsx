@@ -33,7 +33,7 @@ export const LavanderDefaultCard: Story = {
         image: lavanderCandle,
         title: "Lavanda di Provenza",
         description: "Olio essenziale purissimo per conciliare il relax e il riposo notturno.",
-        price: "14,90 €",
+        price: "15,50 €",
         category: "floral",
         categoryLabel: "floreale"
     }
@@ -60,5 +60,19 @@ export const VanillaDefaultCard: Story = {
         price: "14,90 €",
         category: "sweet",
         categoryLabel: "dolce"
+    }
+}
+
+// Storia del prodotto in sconto (Arancia + Sconto)
+export const DiscountedCandle: Story = {
+    args: {
+        image: orangeCandle,
+        title: "Agrumi di Sicilia",
+        description: "Una sferzata di energia pura con note vivaci di arancia amara e bergamotto.",
+        price: "13,90 €",
+        category: "citrus",
+        categoryLabel: "agrumata",
+        status: "discount",
+        statusLabel: "- 20%"
     }
 }

@@ -11,6 +11,7 @@ export type CardProps = {
     category: "floral" | "sweet" | "citrus";
     categoryLabel: string;
     status?: "new" | "discount" | "soldOut";
+    statusLabel: string
 }
 
 export const Card = ({
@@ -20,7 +21,8 @@ export const Card = ({
     price,
     category,
     categoryLabel,
-    status
+    status,
+    statusLabel
 
 }: CardProps) => {
 
@@ -35,7 +37,8 @@ export const Card = ({
                 {status && (
                     <Badge
                         variant={status}
-                        label={status === "discount" ? "- 20%" : status} />
+                        label={status === "discount" ? "- 20%" : statusLabel}
+                    />
                 )}
 
                 <img src={image} alt={title} className="card-image" />
