@@ -76,3 +76,17 @@ export const DiscountedCandle: Story = {
         statusLabel: "- 20%"
     }
 }
+
+// Storia del prodotto nuovo arrivo (Lavanda + Novità)
+export const NewArrivalCandle: Story = {
+    args: {
+        image: lavanderCandle,
+        title: "Lavanda di Provenza",
+        description: "Olio essenziale purissimo per conciliare il relax e il riposo notturno.",
+        price: "15,50 €",
+        category: "floral",
+        categoryLabel: "floreale",
+        status: "new",
+        statusLabel: "novità"
+    }
+}
