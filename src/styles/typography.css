@@ -1,9 +1,9 @@
 /* Importazione del font da Google Fonts */
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Playfair+Display&display=swap');
 
 /* Impostazione font principale Arial */
 html {
-    font-family: "Nunito", Arial, Helvetica, sans-serif;
+    font-family: "Inter", sans-serif;
 }
 
 /* Dimensione del testo base, controllata tramite una variabile CSS */
