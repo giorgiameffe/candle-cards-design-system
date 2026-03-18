@@ -4,6 +4,7 @@
     background-color: var(--color-gray-14);
     color: var(--color-gray-0);
     border-radius: 3rem;
+    cursor: pointer;
 }
 
 /* Bottone small */
@@ -24,10 +25,16 @@
     font-size: var(--font-size-h6);
 }
 
-/* Bottone disabilitato */
+/* Bottone stato hover  */
+.btn:hover {
+    background-color: var(--color-gray-12);
+}
+
+/* Bottone stato disabilitato */
 .btn:disabled {
     background-color: var(--color-gray-2);
     color: var(--color-gray-10);
+    cursor: not-allowed;
 }
 
 /* Stile per gruppo di bottoni */
