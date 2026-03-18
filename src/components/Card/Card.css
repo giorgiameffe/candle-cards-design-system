@@ -54,6 +54,21 @@
     right: 0.2rem;
 }
 
-.card-soldOut {
+.card-soldOut .card-image,
+.card-soldOut .card-title,
+.card-soldOut .card-price-container,
+.card-soldOut .card-description {
     opacity: 0.6;
+}
+
+.card-soldOut .card-badge-category {
+    opacity: 0.8;
+}
+
+.card-soldOut .card-description {
+    color: var(--color-gray-13);
+}
+
+.card-soldOut .badge-soldOut {
+    z-index: 1;
 }
