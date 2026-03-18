@@ -39,7 +39,7 @@
     --hue-red: 25;
 
     /* ===== GRIGI (PRIMARIO + BADGE SOLD OUT) ===== */
-    --color-gray-0: oklch(98% 0.01 var(--hue-gray));
+    --color-gray-0: oklch(98% 0.002 var(--hue-gray));
     --color-gray-1: oklch(94% 0.01 var(--hue-gray));
     --color-gray-2: oklch(90% 0.01 var(--hue-gray));
     --color-gray-3: oklch(86% 0.01 var(--hue-gray));
