@@ -29,7 +29,6 @@
     font-size: var(--font-size-sm);
     color: var(--color-gray-12);
     margin-bottom: var(--spacing-xs);
-    font-style: italic;
 }
 
 .card-price-container {

@@ -1,5 +1,5 @@
 /* Importazione del font da Google Fonts */
-@import url("https://fonts.googleapis.com/css2?family=Nunito:&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:&display=swap");
 
 /* Impostazione font principale Arial */
 html {
@@ -14,6 +14,16 @@ body {
 /* Classe di utilità per font-size "hero" (grandi titoli introduttivi) */
 .font-size-hero {
     font-size: var(--font-size-hero);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Playfair Display", serif;
+    font-style: italic;
 }
 
 /* Regole comuni per i titoli (h1–h6) e classi equivalenti.
