@@ -28,6 +28,7 @@
 /* Bottone stato hover  */
 .btn:hover {
     background-color: var(--color-gray-12);
+    transition: 0.5s;
 }
 
 /* Bottone stato disabilitato */
