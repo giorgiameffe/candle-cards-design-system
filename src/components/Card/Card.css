@@ -53,3 +53,7 @@
     top: 1.5rem;
     right: 0.2rem;
 }
+
+.card-soldOut {
+    opacity: 0.6;
+}

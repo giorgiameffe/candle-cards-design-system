@@ -25,14 +25,13 @@ export const Card = ({
     categoryLabel,
     status,
     statusLabel
-
 }: CardProps) => {
 
     const isSoldOut = status === "soldOut";
 
     return (
 
-        <article className="card">
+        <article className={`card ${isSoldOut ? "card card-soldOut" : ""}`}>
 
             {/* Header della Card */}
             <div className="card-header">
