@@ -13,6 +13,11 @@ const meta: Meta<typeof Button> = {
     parameters: {
         // Centra il componente nella preview
         layout: 'centered',
+        docs: {
+            description: {
+                component: "Il **Button** è l'elemento d'interazione primario, configurabile in tre dimensioni (small, medium, large) per adattarsi a diverse densità di layout. Gestisce internamente gli stati di hover e disabled, quest'ultimo fondamentale per inibire l'acquisto dei prodotti esauriti mantenendo coerenza visiva con la Card.",
+            },
+        },
     },
     // Abilita la generazione automatica della documentazione
     tags: ['autodocs'],

@@ -13,6 +13,11 @@ const meta: Meta<typeof Badge> = {
   parameters: {
     // Centra il componente nella preview
     layout: 'centered',
+    docs: {
+      description: {
+        component: "Il **Badge** è un elemento informativo compatto utilizzato per categorizzare le candele (floral, citrus, sweet) o indicarne lo stato commerciale (new, discount, soldOut). Cambia dinamicamente colore in base alla variante selezionata per garantire un'immediata distinzione visiva tra le diverse tipologie di prodotto."
+      }
+    }
   },
   // Abilita la generazione automatica della documentazione
   tags: ['autodocs'],
