@@ -1,6 +1,6 @@
 .card {
     max-width: 280px;
-    background-color: light-dark(var(--color-gray-0), var(--color-gray-14));
+    background-color: light-dark(var(--color-gray-0), var(--color-gray-13));
     border-radius: 1rem;
     padding: var(--spacing-sm);
     display: flex;
@@ -23,11 +23,12 @@
 .card-title {
     font-size: var(--font-size-h6);
     line-height: 1.5;
+    color: light-dark(var(--color-gray-15), var(--color-gray-1));
 }
 
 .card-description {
     font-size: var(--font-size-sm);
-    color: var(--color-gray-12);
+    color: light-dark(var(--color-gray-12), var(--color-gray-3));
     margin-bottom: var(--spacing-xs);
     line-height: 1.5;
 }
@@ -46,6 +47,7 @@
 
 .card-price {
     font-weight: 700;
+    color: light-dark(var(--color-gray-15), var(--color-gray-1));
 }
 
 /* Badge status */

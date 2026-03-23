@@ -1,8 +1,8 @@
 .btn {
     background: none;
     border: none;
-    background-color: var(--color-gray-14);
-    color: var(--color-gray-0);
+    background-color: light-dark(var(--color-gray-14), var(--color-gray-1));
+    color: light-dark(var(--color-gray-0), var(--color-gray-15));
     border-radius: 3rem;
     cursor: pointer;
 }
@@ -27,7 +27,7 @@
 
 /* Bottone stato hover  */
 .btn:hover {
-    background-color: var(--color-gray-12);
+    background-color: light-dark(var(--color-gray-12), var(--color-gray-3));
     transition: 0.5s;
 }
 
