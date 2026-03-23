@@ -1,6 +1,6 @@
 .card {
     max-width: 280px;
-    background-color: var(--color-gray-0);
+    background-color: light-dark(var(--color-gray-0), var(--color-gray-14));
     border-radius: 1rem;
     padding: var(--spacing-sm);
     display: flex;
