@@ -57,7 +57,9 @@
     right: 0.2rem;
 }
 
-/* Card disabilitata */
+/* Card disabilitata (Sold Out) */
+
+/* 1. Gestione opacità generale */
 .card-soldOut .card-image,
 .card-soldOut .card-title,
 .card-soldOut .card-price-container,
@@ -65,14 +67,24 @@
     opacity: 0.6;
 }
 
-.card-soldOut .card-badge-category {
-    opacity: 0.8;
+/* 2. Titolo Sold Out */
+.card-soldOut .card-title {
+    /* Light: grigio scuro | Dark: grigio chiaro */
+    color: light-dark(var(--color-gray-13), var(--color-gray-3));
 }
 
+/* 3. Descrizione Sold Out */
 .card-soldOut .card-description {
-    color: var(--color-gray-13);
+    color: light-dark(var(--color-gray-13), var(--color-gray-4));
 }
 
+/* 4. Prezzo Sold Out */
+.card-soldOut .card-price {
+    color: light-dark(var(--color-gray-13), var(--color-gray-3));
+}
+
+/* 5. Badge visibilità */
 .card-soldOut .badge-soldOut {
-    z-index: 1;
+    z-index: 2;
+    opacity: 1;
 }
