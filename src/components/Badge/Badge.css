@@ -38,8 +38,8 @@
 
 /* Stile per badge sold out */
 .badge-soldOut {
-    background-color: var(--color-gray-15);
-    color: var(--color-gray-0);
+    background-color: light-dark(var(--color-gray-15), var(--color-gray-1));
+    color: light-dark(var(--color-gray-0), var(--color-gray-15));
 }
 
 /* Stile per gruppo di varianti */
