@@ -88,3 +88,15 @@
     z-index: 2;
     opacity: 1;
 }
+
+/* Responsività mobile */
+@media (max-width: 480px) {
+
+    .card {
+        padding: var(--spacing-md);
+    }
+
+    .card-badge-category {
+        margin-top: var(--spacing-xs);
+    }
+}
