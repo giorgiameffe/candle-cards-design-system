@@ -145,4 +145,8 @@
     --color-red-13: oklch(18% 0.09 var(--hue-red));
     --color-red-14: oklch(15% 0.06 var(--hue-red));
     --color-red-15: oklch(10% 0.03 var(--hue-red));
+
+    /* Colore tema chiaro/scuro */
+    --color-neutral-bg: light-dark(var(--color-gray-0), var(--color-gray-12));
+    --color-neutral-text: light-dark(var(--color-gray-12), var(--color-gray-1));
 }
