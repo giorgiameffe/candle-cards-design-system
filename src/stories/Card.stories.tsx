@@ -10,6 +10,7 @@ import vanillaCandle from "../assets/img/candle-vaniglia.png";
 
 // Importazioni immagini candele hover
 import lavanderHoverImage from "../assets/img/lavanda-hover-image.png";
+import orangeHoverImage from "../assets/img/arancia-hover-image.png"
 import vanillaHoverImage from "../assets/img/vaniglia-hover-image.png";
 
 // Configurazione della storia del componente
@@ -112,6 +113,7 @@ export const LavanderDefaultCard: Story = {
 export const OrangeDefaultCard: Story = {
     args: {
         image: orangeCandle,
+        hoverImage: orangeHoverImage,
         title: "Agrumi di Sicilia",
         description: "Una sferzata di energia pura con note vivaci di arancia amara e bergamotto.",
         price: "13,90 €",

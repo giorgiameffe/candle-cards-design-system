@@ -5,7 +5,7 @@ import "./Card.css";
 
 export type CardProps = {
     image: string;
-    hoverImage: string;
+    hoverImage?: string;
     title: string;
     description: string;
     price: string;
@@ -50,11 +50,14 @@ export const Card = ({
                         alt={title}
                         className="card-image main-image"
                     />
-                    <img
-                        src={hoverImage}
-                        alt={`${title} dettaglio`}
-                        className="card-image hover-image"
-                    />
+
+                    {hoverImage &&
+                        <img
+                            src={hoverImage}
+                            alt={`${title} dettaglio`}
+                            className="card-image hover-image"
+                        />
+                    }
                 </div>
             </div>
 
