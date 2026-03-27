@@ -139,6 +139,7 @@ export const VanillaDefaultCard: Story = {
 export const DiscountedCandle: Story = {
     args: {
         image: orangeCandle,
+        hoverImage: orangeHoverImage,
         title: "Agrumi di Sicilia",
         description: "Una sferzata di energia pura con note vivaci di arancia amara e bergamotto.",
         oldPrice: "17,90 €",
@@ -154,6 +155,7 @@ export const DiscountedCandle: Story = {
 export const NewArrivalCandle: Story = {
     args: {
         image: lavanderCandle,
+        hoverImage: lavanderHoverImage,
         title: "Lavanda di Provenza",
         description: "Olio essenziale purissimo per conciliare il relax e il riposo notturno.",
         price: "15,50 €",

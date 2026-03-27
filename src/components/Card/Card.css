@@ -40,13 +40,12 @@
 }
 
 /* Effetto al passaggio del mouse SOLO sull'immagine */
-.card-image-wrapper:hover .hover-image {
+.card:not(.card-soldOut) .card-image-wrapper:hover .hover-image {
     opacity: 1;
 }
 
-.card-image-wrapper:hover .main-image {
+.card:not(.card-soldOut) .card-image-wrapper:hover .main-image {
     opacity: 0;
-    /* Opzionale, per un cross-fade pulito */
 }
 
 .card-badge-category {
@@ -71,7 +70,7 @@
 }
 
 .card-old-price {
-    color: var(--color-gray-10);
+    color: light-dark(var(--color-gray-10), var(--color-gray-9));
     text-decoration: line-through;
     font-weight: 400;
     margin-right: 0.5rem;
@@ -93,35 +92,42 @@
 
 /* Card disabilitata (Sold Out) */
 
-/* 1. Gestione opacità generale */
+.card-soldOut {
+    cursor: not-allowed;
+}
+
+/* Gestione opacità generale */
 .card-soldOut .card-image,
+.card-soldOut .hover-image,
 .card-soldOut .card-title,
 .card-soldOut .card-price-container,
-.card-soldOut .card-description {
+.card-soldOut .card-description,
+.card-soldOut .image-hover-soldOut {
     opacity: 0.6;
 }
 
-/* 2. Titolo Sold Out */
+/* Titolo Sold Out */
 .card-soldOut .card-title {
     /* Light: grigio scuro | Dark: grigio chiaro */
     color: light-dark(var(--color-gray-13), var(--color-gray-3));
 }
 
-/* 3. Descrizione Sold Out */
+/* Descrizione Sold Out */
 .card-soldOut .card-description {
     color: light-dark(var(--color-gray-13), var(--color-gray-4));
 }
 
-/* 4. Prezzo Sold Out */
+/* Prezzo Sold Out */
 .card-soldOut .card-price {
     color: light-dark(var(--color-gray-13), var(--color-gray-3));
 }
 
-/* 5. Badge visibilità */
+/* Badge visibilità */
 .card-soldOut .badge-soldOut {
     z-index: 2;
     opacity: 1;
 }
+
 
 /* Responsività mobile */
 @media (max-width: 480px) {
