@@ -9,7 +9,8 @@ import orangeCandle from "../assets/img/candle-arancia.png";
 import vanillaCandle from "../assets/img/candle-vaniglia.png";
 
 // Importazioni immagini candele hover
-import vanillaHoverImage from "../assets/img/vaniglia-hover-image.png"
+import lavanderHoverImage from "../assets/img/lavanda-hover-image.png";
+import vanillaHoverImage from "../assets/img/vaniglia-hover-image.png";
 
 // Configurazione della storia del componente
 const meta: Meta<typeof Card> = {
@@ -98,6 +99,7 @@ type Story = StoryObj<typeof meta>;
 export const LavanderDefaultCard: Story = {
     args: {
         image: lavanderCandle,
+        hoverImage: lavanderHoverImage,
         title: "Lavanda di Provenza",
         description: "Olio essenziale purissimo per conciliare il relax e il riposo notturno.",
         price: "15,50 €",
