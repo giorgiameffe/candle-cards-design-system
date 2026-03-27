@@ -62,14 +62,13 @@ La palette cromatica è il cuore pulsante del progetto. Ogni tonalità è stata 
 Ho diviso i colori in due logiche distinte: **Categorie Olfattive** (emozionali) e **Stati di Vendita** (funzionali).
 
 ![Sistema Badge](/src/assets/img/screenshots/badge-gruppo.png)
-*Esempio del sistema di badge: Categorie Olfattive (emozionali) e Stati di Vendita (funzionali).*
 
 #### 🌸 Badge di Categoria (le fragranze)
 
 | Categoria | Colore | Sentiment | Ruolo UI |
 | :--- | :--- | :--- | :--- |
 | **Floreale** | `var(--color-pink-3)` | Dolcezza e Relax | Identifica note come Lavanda o Gelsomino. |
-| **Agrumi** | `var(--color-orange-3)` | Energia e Vitalità | Perfetto per candele agrumate, stimola l'attenzione. |
+| **Agrumi** | `var(--color-orange-3)` | Energia e Vitalità | Perfetto per candele agrumate. |
 | **Dolce** | `var(--color-amber-3)` | Calore e Comfort | Richiama note di Vaniglia e Ambra. |
 
 #### 🏷️ Badge di Stato (logica e-commerce)
@@ -92,7 +91,7 @@ Il componente è nativamente adattivo. Grazie all'implementazione della funzione
 | 🌞 Light Mode | 🌙 Dark Mode |
 | :---: | :---: |
 | ![Light Mode](/src/assets/img/screenshots/candela-arancia-default.png) | ![Dark Mode](/src/assets/img/screenshots/candela-arancia-dark.png) |
-> Il passaggio tra i temi è gestito nativamente tramite la funzione CSS `light-dark()`, garantendo prestazioni ottimali e zero flash di colore durante il caricamento.
+
 ---
 
 ## ♿ Accessibilità & UX Writing
@@ -105,7 +104,7 @@ Il componente è nativamente adattivo. Grazie all'implementazione della funzione
 
 Quando il prodotto non è disponibile, la card comunica lo stato in modo chiaro ma non invasivo, mantenendo la coerenza del layout:
 
-| Card Disponibile (Active) | Card Esaurita (Sold Out) |
+| Card Prodotto Disponibile | Card Prodotto Esaurito |
 | :---: | :---: |
 | ![Card Active](/src/assets/img/screenshots/candela-vaniglia-default.png) | ![Card Sold Out](/src/assets/img/screenshots/candela-vaniglia-soldOut.png) |
 
@@ -120,7 +119,7 @@ Quando il prodotto non è disponibile, la card comunica lo stato in modo chiaro 
 
 Il componente non si limita ad adattarsi passivamente allo schermo, ma utilizza una logica di **Fluid Design** per garantire un'estetica raffinata e leggibile su ogni dispositivo, dal desktop allo smartphone.
 
-* **Desktop & Tablet**: La card mantiene una `max-width` di **280px**, dimensione ottimale per la creazione di griglie prodotto (Product Grids) eleganti, simmetriche e professionali.
+* **Desktop & Tablet**: La card mantiene una `max-width` di **280px**, dimensione ottimale per la creazione di griglie prodotto eleganti, simmetriche e professionali.
 
 * **Mobile (≤480px)**: 
     * **Comfort Visivo**: Attraverso una media query dedicata, il padding interno della card aumenta passando da `sm` a `md` (`var(--spacing-md)`). Questo garantisce maggiore "respiro" al contenuto sugli schermi piccoli, evitando che gli elementi risultino troppo compressi.
