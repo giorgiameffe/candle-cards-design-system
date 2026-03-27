@@ -12,8 +12,41 @@
 
 .card-image {
     width: 100%;
-    object-fit: contain;
+    object-fit: cover;
     border-radius: 0.25rem;
+    display: block;
+}
+
+/* Contenitore per le immagini */
+.card-image-wrapper {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 0.25rem;
+}
+
+/* L'immagine hover viene posizionata sopra la principale */
+.hover-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    /* Inizialmente invisibile */
+    transition: opacity 0.3s ease-in-out;
+}
+
+.main-image {
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Effetto al passaggio del mouse SOLO sull'immagine */
+.card-image-wrapper:hover .hover-image {
+    opacity: 1;
+}
+
+.card-image-wrapper:hover .main-image {
+    opacity: 0;
+    /* Opzionale, per un cross-fade pulito */
 }
 
 .card-badge-category {
@@ -55,6 +88,7 @@
     position: absolute;
     top: 1.5rem;
     right: 0.2rem;
+    z-index: 2;
 }
 
 /* Card disabilitata (Sold Out) */

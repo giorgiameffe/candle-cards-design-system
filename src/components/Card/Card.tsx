@@ -5,6 +5,7 @@ import "./Card.css";
 
 export type CardProps = {
     image: string;
+    hoverImage: string;
     title: string;
     description: string;
     price: string;
@@ -17,6 +18,7 @@ export type CardProps = {
 
 export const Card = ({
     image,
+    hoverImage,
     title,
     description,
     price,
@@ -30,8 +32,7 @@ export const Card = ({
     const isSoldOut = status === "soldOut";
 
     return (
-
-        <article className={`card ${isSoldOut ? "card card-soldOut" : ""}`}>
+        <article className={`card ${isSoldOut ? "card-soldOut" : ""}`}>
 
             {/* Header della Card */}
             <div className="card-header">
@@ -42,7 +43,19 @@ export const Card = ({
                     />
                 )}
 
-                <img src={image} alt={title} className="card-image" />
+                {/* Contenitore per gestire il cambio immagine via CSS */}
+                <div className="card-image-wrapper">
+                    <img
+                        src={image}
+                        alt={title}
+                        className="card-image main-image"
+                    />
+                    <img
+                        src={hoverImage}
+                        alt={`${title} dettaglio`}
+                        className="card-image hover-image"
+                    />
+                </div>
             </div>
 
             {/* Body della Card */}
@@ -72,5 +85,4 @@ export const Card = ({
 
         </article>
     )
-
 }
