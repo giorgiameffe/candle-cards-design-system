@@ -96,6 +96,47 @@ export default meta;
 
 type Story = StoryObj<typeof meta>;
 
+// Storia della collezione in stato Default
+export const DefaultCollection: Story = {
+    render: () => (
+
+        <div className="cards-container">
+            {/* 1. Lavanda - Variante Floreale */}
+            <Card
+                image={lavanderCandle}
+                hoverImage={lavanderHoverImage}
+                title="Lavanda di Provenza"
+                description="Olio essenziale purissimo per conciliare il relax e il riposo notturno."
+                price="15,50 €"
+                category="floral"
+                categoryLabel="floreale"
+            />
+
+            {/* 2. Arancia - Variante Agrumata */}
+            <Card
+                image={orangeCandle}
+                hoverImage={orangeHoverImage}
+                title="Agrumi di Sicilia"
+                description="Una sferzata di energia pura con note vivaci di arancia amara e bergamotto."
+                price="13,90 €"
+                category="citrus"
+                categoryLabel="agrumata"
+            />
+
+            {/* 3. Vaniglia - Variante Dolce */}
+            <Card
+                image={vanillaCandle}
+                hoverImage={vanillaHoverImage}
+                title="Vanilla Bourbon"
+                description="Un aroma dolce che avvolge la stanza, creando un'atmosfera intima."
+                price="14,90 €"
+                category="sweet"
+                categoryLabel="dolce"
+            />
+        </div>
+    ),
+};
+
 // Storia default della candela alla Lavanda 
 export const LavanderDefaultCard: Story = {
     args: {

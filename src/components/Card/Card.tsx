@@ -13,7 +13,7 @@ export type CardProps = {
     category: "floral" | "sweet" | "citrus";
     categoryLabel: string;
     status?: "new" | "discount" | "soldOut";
-    statusLabel: string
+    statusLabel?: string
 }
 
 export const Card = ({
@@ -36,10 +36,10 @@ export const Card = ({
 
             {/* Header della Card */}
             <div className="card-header">
-                {status && (
+                {status && (status === "discount" || statusLabel) && (
                     <Badge
                         variant={status}
-                        label={status === "discount" ? "- 20%" : statusLabel}
+                        label={status === "discount" ? "- 20%" : statusLabel!}
                     />
                 )}
 

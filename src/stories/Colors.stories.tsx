@@ -54,7 +54,7 @@ export const Default: Story = {
             <h1 className="font-size-h2">Candle Design System - Palette</h1>
 
             {/* --- GRIGI NATURALI --- */}
-            <h2 className='font-size-h3'>Gray (Structure & Sold Out)</h2>
+            <h2 className='font-size-h3'>Gray (Structure - Sold Out)</h2>
             <div className="container">
                 {Array.from({ length: 16 }).map((_, i) => (
                     <ClickToCopy
