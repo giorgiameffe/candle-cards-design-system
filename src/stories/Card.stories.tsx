@@ -78,7 +78,7 @@ const meta: Meta<typeof Card> = {
         // STATO (BADGE IN ALTO A DESTRA)
         status: {
             control: { type: 'select' },
-            options: [undefined, 'new', 'discount', 'soldOut'],
+            options: ['new', 'discount', 'soldOut'],
             description: 'Stato commerciale del prodotto',
             table: { category: 'Stato Prodotto' }
         },
@@ -107,7 +107,7 @@ export const DefaultCollection: Story = {
                 hoverImage={lavanderHoverImage}
                 title="Lavanda di Provenza"
                 description="Olio essenziale purissimo per conciliare il relax e il riposo notturno."
-                price="15,50 €"
+                price="34,90 €"
                 category="floral"
                 categoryLabel="floreale"
             />
@@ -118,7 +118,7 @@ export const DefaultCollection: Story = {
                 hoverImage={orangeHoverImage}
                 title="Agrumi di Sicilia"
                 description="Una sferzata di energia pura con note vivaci di arancia amara e bergamotto."
-                price="13,90 €"
+                price="34,90 €"
                 category="citrus"
                 categoryLabel="agrumata"
             />
@@ -129,7 +129,7 @@ export const DefaultCollection: Story = {
                 hoverImage={vanillaHoverImage}
                 title="Vanilla Bourbon"
                 description="Un aroma dolce che avvolge la stanza, creando un'atmosfera intima."
-                price="14,90 €"
+                price="34,90 €"
                 category="sweet"
                 categoryLabel="dolce"
             />
@@ -144,7 +144,7 @@ export const LavanderDefaultCard: Story = {
         hoverImage: lavanderHoverImage,
         title: "Lavanda di Provenza",
         description: "Olio essenziale purissimo per conciliare il relax e il riposo notturno.",
-        price: "15,50 €",
+        price: "34,90 €",
         category: "floral",
         categoryLabel: "floreale"
     }
@@ -157,7 +157,7 @@ export const OrangeDefaultCard: Story = {
         hoverImage: orangeHoverImage,
         title: "Agrumi di Sicilia",
         description: "Una sferzata di energia pura con note vivaci di arancia amara e bergamotto.",
-        price: "13,90 €",
+        price: "34,90 €",
         category: "citrus",
         categoryLabel: "agrumata"
     }
@@ -170,7 +170,7 @@ export const VanillaDefaultCard: Story = {
         hoverImage: vanillaHoverImage,
         title: "Vanilla Bourbon",
         description: "Un aroma dolce che avvolge la stanza, creando un'atmosfera intima.",
-        price: "14,90 €",
+        price: "34,90 €",
         category: "sweet",
         categoryLabel: "dolce"
     }
@@ -183,8 +183,8 @@ export const DiscountedCandle: Story = {
         hoverImage: orangeHoverImage,
         title: "Agrumi di Sicilia",
         description: "Una sferzata di energia pura con note vivaci di arancia amara e bergamotto.",
-        oldPrice: "17,90 €",
-        price: "14,30 €",
+        oldPrice: "34,90 €",
+        price: "27,90 €",
         category: "citrus",
         categoryLabel: "agrumata",
         status: "discount",
@@ -199,7 +199,7 @@ export const NewArrivalCandle: Story = {
         hoverImage: lavanderHoverImage,
         title: "Lavanda di Provenza",
         description: "Olio essenziale purissimo per conciliare il relax e il riposo notturno.",
-        price: "15,50 €",
+        price: "34,90 €",
         category: "floral",
         categoryLabel: "floreale",
         status: "new",
@@ -213,7 +213,7 @@ export const SoldOutCandle: Story = {
         image: vanillaCandle,
         title: "Vanilla Bourbon",
         description: "Un aroma dolce che avvolge la stanza, creando un'atmosfera intima.",
-        price: "14,90 €",
+        price: "34,90 €",
         category: "sweet",
         categoryLabel: "dolce",
         status: "soldOut",
