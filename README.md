@@ -11,7 +11,7 @@ La card è stata progettata per trasmettere l'essenza della fragranza al primo s
 
 | 🌸 **Floreale** | 🍊 **Agrumata** | 🍦 **Dolce** |
 | :---: | :---: | :---: |
-| ![Card Lavanda](/src/assets/img/screenshots/candela-lavanda-default.png) | ![Card Arancia](/src/assets/img/screenshots/candela-arancia-default.png) | ![Card Vaniglia](/src/assets/img/screenshots/candela-vaniglia-default.png) |
+| ![Card Lavanda](/src/assets/img/screenshots/lavender-candle-default.png) | ![Card Arancia](/src/assets/img/screenshots/orange-candle-default.png) | ![Card Vaniglia](/src/assets/img/screenshots/vanilla-candle-default.png) |
 | *Lavanda di Provenza* | *Agrumi di Sicilia* | *Vanilla Bourbon* |
 
 ---
@@ -49,7 +49,7 @@ La **Candle Card** è la molecola principale: unisce atomi diversi per creare un
 
 | Stato Default | Stato Hover  |
 | :---: | :---: |
-| ![Candela Finita](/src/assets/img/screenshots/candela-lavanda-default.png) | ![Ingredienti Vaniglia](/src/assets/img/screenshots/candela-lavanda-hover.png) |
+| ![Candela Finita](/src/assets/img/screenshots/lavender-candle-default.png) | ![Ingredienti Vaniglia](/src/assets/img/screenshots/lavender-candle-hover.png) |
 
 ---
 
@@ -90,7 +90,7 @@ Il componente è nativamente adattivo. Grazie all'implementazione della funzione
 
 | 🌞 Light Mode | 🌙 Dark Mode |
 | :---: | :---: |
-| ![Light Mode](/src/assets/img/screenshots/candela-arancia-default.png) | ![Dark Mode](/src/assets/img/screenshots/candela-arancia-dark.png) |
+| ![Light Mode](/src/assets/img/screenshots/orange-candle-default.png) | ![Dark Mode](/src/assets/img/screenshots/orange-candle-dark.png) |
 
 ---
 
@@ -106,7 +106,7 @@ Quando il prodotto non è disponibile, la card comunica lo stato in modo chiaro 
 
 | Card Prodotto Disponibile | Card Prodotto Esaurito |
 | :---: | :---: |
-| ![Card Active](/src/assets/img/screenshots/candela-vaniglia-default.png) | ![Card Sold Out](/src/assets/img/screenshots/candela-vaniglia-soldOut.png) |
+| ![Card Active](/src/assets/img/screenshots/vanilla-candle-default.png) | ![Card Sold Out](/src/assets/img/screenshots/vanilla-candle-soldOut.png) |
 
 **Dettagli Tecnici:**
 * **Opacità**: Ridotta al **60%** per gli elementi informativi (Immagine, Titolo, Prezzo).
